@@ -55,7 +55,7 @@ export default function AchievementsPage() {
                   src={item.preview}
                   alt={`Sertifikat ${item.title[language]}`}
                   fill
-                  className="object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                  className="object-contain object-center group-hover:scale-105 transition-transform duration-300 p-1"
                   sizes="(max-width: 768px) 100vw, 300px"
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">

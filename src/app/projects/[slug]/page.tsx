@@ -154,7 +154,7 @@ export default async function ProjectDetailPage({ params }: ProjectDetailProps) 
         </div>
 
         {/* Full Screenshots Documentation Gallery */}
-        <div className="space-y-6 pt-6">
+        <div className="space-y-6 pt-6 text-center sm:text-left">
           <div className="space-y-2">
             <h3 className="text-xl sm:text-2xl font-black tracking-tight text-[var(--text-primary)]">
               Galeri Tangkapan Layar & Dokumentasi Modul
@@ -164,25 +164,25 @@ export default async function ProjectDetailPage({ params }: ProjectDetailProps) 
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-6">
+          <div className="grid grid-cols-1 gap-6 max-w-4xl mx-auto">
             {project.slides.map((slideUrl, idx) => (
               <div
                 key={idx}
-                className="rounded-2xl glass-card overflow-hidden border border-[var(--border-subtle)] space-y-3 p-4 group hover:border-teal-500/40 transition-all"
+                className="rounded-2xl glass-card overflow-hidden border border-[var(--border-subtle)] space-y-3 p-3 sm:p-5 group hover:border-teal-500/40 transition-all bg-slate-950/70"
               >
                 <div className="flex items-center justify-between text-xs font-bold text-[var(--text-muted)] px-1">
-                  <span className="text-teal-400">Layar #{idx + 1}</span>
+                  <span className="text-teal-400 font-bold">Tangkapan Layar Modul #{idx + 1}</span>
                   <span className="font-mono text-[10px] bg-[var(--bg-pill)] px-2.5 py-1 rounded-full border border-[var(--border-subtle)]">
                     {project.name.id}
                   </span>
                 </div>
-                <div className="relative aspect-[16/9] w-full rounded-xl overflow-hidden bg-black/40 border border-white/5">
+                <div className="relative aspect-[16/10] sm:aspect-[16/9] w-full rounded-xl overflow-hidden bg-black/60 border border-white/5 flex items-center justify-center">
                   <Image
                     src={slideUrl}
                     alt={`${project.name.id} - Screenshot ${idx + 1}`}
                     fill
-                    className="object-contain group-hover:scale-[1.01] transition-transform duration-300"
-                    sizes="(max-width: 1024px) 100vw, 850px"
+                    className="object-contain object-center group-hover:scale-[1.01] transition-transform duration-300"
+                    sizes="(max-width: 1024px) 100vw, 900px"
                   />
                 </div>
               </div>

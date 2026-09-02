@@ -81,23 +81,23 @@ export default function OrganizationPage() {
                   <h3 className="text-xs font-bold uppercase tracking-wider text-[var(--text-muted)]">
                     Galeri Dokumentasi Kegiatan ({org.photos.length} Foto)
                   </h3>
-                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-sm sm:max-w-none mx-auto">
                     {org.photos.map((photo, pIdx) => (
                       <div
                         key={pIdx}
                         onClick={() => setLightboxData({ images: org.photos, initialIndex: pIdx })}
-                        className="relative aspect-square rounded-2xl overflow-hidden cursor-pointer group border border-[var(--border-subtle)] bg-slate-900/50"
+                        className="relative aspect-[16/10] sm:aspect-square w-full rounded-2xl overflow-hidden cursor-pointer group border border-[var(--border-subtle)] bg-slate-950/70 shadow-md"
                       >
                         <Image
                           src={photo}
                           alt={`Dokumentasi ${org.organization} - ${pIdx + 1}`}
                           fill
-                          className="object-cover group-hover:scale-110 transition-transform duration-300"
-                          sizes="(max-width: 768px) 50vw, 25vw"
+                          className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                          sizes="(max-width: 640px) 90vw, (max-width: 1024px) 33vw, 25vw"
                         />
                         <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                          <span className="px-2.5 py-1 rounded-full text-[10px] font-bold bg-black/70 text-white backdrop-blur-sm">
-                            Perbesar
+                          <span className="px-3 py-1.5 rounded-full text-xs font-bold bg-black/80 text-white backdrop-blur-md border border-white/20">
+                            Perbesar Foto
                           </span>
                         </div>
                       </div>

@@ -92,25 +92,25 @@ export default function ExperiencePage() {
               {/* Photo Galleries */}
               {exp.photos.length > 0 && (
                 <div className="space-y-3 pt-4 border-t border-[var(--border-subtle)]">
-                  <h3 className="text-xs font-bold uppercase tracking-wider text-[var(--text-muted)]">
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-[var(--text-muted)] text-center sm:text-left">
                     {t.experience.documentation}
                   </h3>
-                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-sm sm:max-w-none mx-auto">
                     {exp.photos.map((photo, pIdx) => (
                       <div
                         key={pIdx}
                         onClick={() => setLightboxData({ images: exp.photos, initialIndex: pIdx })}
-                        className="relative aspect-video rounded-2xl overflow-hidden cursor-pointer group border border-[var(--border-subtle)] bg-slate-900/40"
+                        className="relative aspect-[16/10] w-full rounded-2xl overflow-hidden cursor-pointer group border border-[var(--border-subtle)] bg-slate-950/70 shadow-md"
                       >
                         <Image
                           src={photo}
                           alt={`Dokumentasi ${exp.company} - ${pIdx + 1}`}
                           fill
-                          className="object-cover group-hover:scale-105 transition-transform duration-300"
-                          sizes="(max-width: 768px) 50vw, 33vw"
+                          className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                          sizes="(max-width: 640px) 90vw, (max-width: 1024px) 50vw, 33vw"
                         />
                         <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                          <span className="px-3 py-1 rounded-full text-xs font-bold bg-black/70 text-white backdrop-blur-sm">
+                          <span className="px-3.5 py-1.5 rounded-full text-xs font-bold bg-black/80 text-white backdrop-blur-md border border-white/20">
                             Lihat Foto
                           </span>
                         </div>
