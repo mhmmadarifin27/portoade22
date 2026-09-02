@@ -75,34 +75,29 @@ export default function OrganizationPage() {
                 </p>
               </div>
 
-              {/* Photo Gallery - Compact & Centered */}
+              {/* Photo Masonry Gallery */}
               {org.photos.length > 0 && (
                 <div className="space-y-3 pt-4 border-t border-[var(--border-subtle)]">
-                  <div className="flex items-center justify-between">
-                    <h3 className="text-xs font-bold uppercase tracking-wider text-[var(--text-muted)]">
-                      {language === 'id' ? `Dokumentasi Foto (${org.photos.length} Foto)` : `Photo Documentation (${org.photos.length} Photos)`}
-                    </h3>
-                    <span className="text-[10px] text-teal-400 font-semibold">
-                      {language === 'id' ? 'Klik untuk memperbesar' : 'Click to enlarge'}
-                    </span>
-                  </div>
-                  <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 sm:gap-3">
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-[var(--text-muted)]">
+                    Galeri Dokumentasi Kegiatan ({org.photos.length} Foto)
+                  </h3>
+                  <div className="flex flex-wrap justify-center gap-4">
                     {org.photos.map((photo, pIdx) => (
                       <div
                         key={pIdx}
                         onClick={() => setLightboxData({ images: org.photos, initialIndex: pIdx })}
-                        className="relative aspect-square w-full rounded-xl sm:rounded-2xl overflow-hidden cursor-pointer group border border-[var(--border-subtle)] bg-slate-950/70 shadow-sm hover:border-teal-500/50 transition-all hover:scale-[1.03]"
+                        className="relative aspect-square w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(33.333%-0.75rem)] lg:w-[calc(25%-0.75rem)] max-w-sm sm:max-w-none rounded-2xl overflow-hidden cursor-pointer group border border-[var(--border-subtle)] bg-slate-950/70 shadow-md shrink-0"
                       >
                         <Image
                           src={photo}
                           alt={`Dokumentasi ${org.organization} - ${pIdx + 1}`}
                           fill
-                          className="object-cover object-center group-hover:scale-110 transition-transform duration-300"
-                          sizes="(max-width: 640px) 33vw, 150px"
+                          className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                          sizes="(max-width: 640px) 90vw, (max-width: 1024px) 33vw, 25vw"
                         />
                         <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                          <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-black/80 text-white backdrop-blur-md">
-                            Perbesar
+                          <span className="px-3 py-1.5 rounded-full text-xs font-bold bg-black/80 text-white backdrop-blur-md border border-white/20">
+                            Perbesar Foto
                           </span>
                         </div>
                       </div>
