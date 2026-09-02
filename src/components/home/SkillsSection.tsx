@@ -1,22 +1,30 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import { portfolioData } from '@/data/portfolioData';
 import { useLanguage } from '@/context/LanguageContext';
 
 export const SkillsSection = () => {
   const { language, t } = useLanguage();
-  const [activeCategory, setActiveCategory] = useState<number | 'all'>('all');
 
-  const allSkills = portfolioData.skills.flatMap((cat) => cat.skills);
-  const displaySkills =
-    activeCategory === 'all'
-      ? allSkills
-      : portfolioData.skills[activeCategory]?.skills || [];
+  // Combine and partition skills into two balanced continuous ribbons
+  const row1 = [
+    ...portfolioData.skills[0].skills, // Web Dev
+    ...portfolioData.skills[1].skills, // IT Support & Dev Tools
+  ];
+
+  const row2 = [
+    ...portfolioData.skills[2].skills, // Data & Office
+    ...portfolioData.skills[3].skills, // Design & Leadership Tools
+  ];
+
+  // Duplicate arrays for seamless infinite loop
+  const duplicatedRow1 = [...row1, ...row1];
+  const duplicatedRow2 = [...row2, ...row2];
 
   return (
-    <section id="keahlian" className="py-20 px-4 sm:px-6 relative bg-[var(--bg-secondary)]/30">
+    <section id="keahlian" className="py-20 px-4 sm:px-6 relative bg-[var(--bg-secondary)]/30 overflow-hidden">
       <div className="max-w-6xl mx-auto space-y-12">
         {/* Header */}
         <div className="space-y-3 text-center max-w-2xl mx-auto">
@@ -31,59 +39,67 @@ export const SkillsSection = () => {
           </p>
         </div>
 
-        {/* Category Filter Pills */}
-        <div className="flex flex-wrap items-center justify-center gap-2">
-          <button
-            onClick={() => setActiveCategory('all')}
-            className={`px-4 py-2 rounded-full text-xs font-bold transition-all ${
-              activeCategory === 'all'
-                ? 'bg-teal-500 text-white shadow-md shadow-teal-500/25'
-                : 'bg-[var(--bg-pill)] hover:bg-[var(--bg-pill-hover)] text-[var(--text-secondary)] border border-[var(--border-subtle)]'
-            }`}
-          >
-            {t.skills.categories.all}
-          </button>
-          {portfolioData.skills.map((cat, idx) => (
-            <button
-              key={idx}
-              onClick={() => setActiveCategory(idx)}
-              className={`px-4 py-2 rounded-full text-xs font-bold transition-all ${
-                activeCategory === idx
-                  ? 'bg-teal-500 text-white shadow-md shadow-teal-500/25'
-                  : 'bg-[var(--bg-pill)] hover:bg-[var(--bg-pill-hover)] text-[var(--text-secondary)] border border-[var(--border-subtle)]'
-              }`}
-            >
-              {cat.name[language]}
-            </button>
-          ))}
-        </div>
-
-        {/* Skills Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4">
-          {displaySkills.map((skill, index) => (
-            <div
-              key={`${skill.name}-${index}`}
-              className="p-4 rounded-2xl glass-card flex flex-col items-center justify-center text-center gap-3 group hover:border-teal-500/40 transition-all hover:scale-105"
-            >
-              <div className="relative w-10 h-10 flex items-center justify-center rounded-xl bg-[var(--bg-pill)] group-hover:bg-[var(--bg-pill-hover)] transition-colors p-2">
-                {skill.iconSrc ? (
-                  <Image
-                    src={skill.iconSrc}
-                    alt={`Logo ${skill.name}`}
-                    width={32}
-                    height={32}
-                    className="object-contain max-h-7 max-w-7 transition-transform group-hover:scale-110"
-                    unoptimized={skill.iconSrc.startsWith('http')}
-                  />
-                ) : (
-                  <div className="w-6 h-6 rounded-full bg-teal-400/20" />
-                )}
+        {/* Infinite Auto-Scrolling Marquee Ribbons */}
+        <div className="space-y-4 sm:space-y-6 pt-2 marquee-mask overflow-hidden">
+          {/* Row 1: Scrolling Left */}
+          <div className="animate-marquee flex items-center gap-3 sm:gap-4 py-1">
+            {duplicatedRow1.map((skill, index) => (
+              <div
+                key={`r1-${skill.name}-${index}`}
+                className="inline-flex items-center gap-3 px-5 py-3 rounded-2xl glass-card border border-[var(--border-subtle)] bg-[var(--bg-card)] shrink-0 hover:border-teal-500/50 hover:bg-[var(--bg-card-hover)] transition-all cursor-default group"
+              >
+                <div className="relative w-8 h-8 flex items-center justify-center rounded-xl bg-[var(--bg-pill)] p-1.5 shrink-0 group-hover:scale-110 transition-transform">
+                  {skill.iconSrc ? (
+                    <Image
+                      src={skill.iconSrc}
+                      alt={`Logo ${skill.name}`}
+                      width={28}
+                      height={28}
+                      className="object-contain max-h-6 max-w-6"
+                      unoptimized={true}
+                    />
+                  ) : (
+                    <div className="w-5 h-5 rounded-full bg-teal-400/20" />
+                  )}
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-xs sm:text-sm font-bold text-[var(--text-primary)] whitespace-nowrap">
+                    {skill.name}
+                  </span>
+                </div>
               </div>
-              <span className="text-xs sm:text-sm font-bold text-[var(--text-primary)]">
-                {skill.name}
-              </span>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          {/* Row 2: Scrolling Left with offset / slower speed */}
+          <div className="animate-marquee-slow flex items-center gap-3 sm:gap-4 py-1">
+            {duplicatedRow2.map((skill, index) => (
+              <div
+                key={`r2-${skill.name}-${index}`}
+                className="inline-flex items-center gap-3 px-5 py-3 rounded-2xl glass-card border border-[var(--border-subtle)] bg-[var(--bg-card)] shrink-0 hover:border-teal-500/50 hover:bg-[var(--bg-card-hover)] transition-all cursor-default group"
+              >
+                <div className="relative w-8 h-8 flex items-center justify-center rounded-xl bg-[var(--bg-pill)] p-1.5 shrink-0 group-hover:scale-110 transition-transform">
+                  {skill.iconSrc ? (
+                    <Image
+                      src={skill.iconSrc}
+                      alt={`Logo ${skill.name}`}
+                      width={28}
+                      height={28}
+                      className="object-contain max-h-6 max-w-6"
+                      unoptimized={true}
+                    />
+                  ) : (
+                    <div className="w-5 h-5 rounded-full bg-teal-400/20" />
+                  )}
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-xs sm:text-sm font-bold text-[var(--text-primary)] whitespace-nowrap">
+                    {skill.name}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
