@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# portoade22 — Ade Kurniawan Portfolio (Next.js)
 
-## Getting Started
+Portofolio profesional **Ade Kurniawan, S.Kom** yang dibangun menggunakan **Next.js 14/15 App Router**, **TypeScript**, dan **Tailwind CSS**. Dilengkapi dengan fitur **Light & Dark Mode**, **Multi-bahasa (Indonesia & English)**, serta desain modern dan responsif yang siap dideploy di **Vercel**.
 
-First, run the development server:
+---
+
+## ✨ Fitur Utama
+
+- 🌓 **Dual Theme (Dark & Light Mode)**: Mode gelap obsidian elegan dengan aksen glow teal/cyan dan mode terang studio berestetika tinggi.
+- 🌐 **Multi-Bahasa Instan (ID & EN)**: Dukungan penuh Bahasa Indonesia dan English tanpa reload halaman.
+- 🎨 **Desain Modern Terinspirasi nigelpayne.com**: Floating glassmorphic dock navbar, tipografi editorial, status badge dinamis, dan animasi mikro.
+- 📂 **Koleksi Proyek Lengkap (8 Proyek)**: Dilengkapi screenshot slider, filter kategori, badge teknologi, modal ringkas, dan halaman detail studi kasus per proyek (`/projects/[slug]`).
+- 💼 **Pengalaman Kerja & Magang**: Dokumentasi mendalam magang di **PT Kilang Pertamina Internasional RU III Plaju** dan **KPKM (Koperasi Kopi Mandalagiri)**.
+- 👥 **Kepemimpinan & Organisasi**: Rekam jejak kepemimpinan sebagai Ketua Umum HMPS SI, BEM FST, GenBI Bank Indonesia, dan EmpowerU Incubation dengan galeri foto interaktif.
+- 📄 **Interactive PDF & Photo Lightbox**: Viewer PDF modal langsung untuk melihat sertifikat Google, HRCI, Microsoft, dan dokumen pembuktian asli di browser.
+- ✉️ **Interactive Contact Generator**: Form pesan langsung dengan integrasi email (mailto) dan WhatsApp.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/) (App Router, Turbopack)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) & Vanilla CSS Custom Properties
+- **Icons**: [Lucide React](https://lucide.dev/) & Custom SVG Icons
+- **Deployment**: [Vercel](https://vercel.com/) (Zero-Config)
+
+---
+
+## 🚀 Menjalankan Secara Lokal
+
+1. **Clone repository:**
+   ```bash
+   git clone https://github.com/mhmmadarifin27/portoade22.git
+   cd portoade22
+   ```
+
+2. **Instal dependensi:**
+   ```bash
+   npm install
+   ```
+
+3. **Jalankan development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Buka browser:**
+   Akses `http://localhost:3000`
+
+---
+
+## 📦 Build Produksi
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌐 Deploy ke Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Buka [Vercel Dashboard](https://vercel.com).
+2. Klik **Add New Project** dan import repository `portoade22`.
+3. Framework akan otomatis terdeteksi sebagai **Next.js**.
+4. Klik **Deploy**.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 👤 Kontak & Profil
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Nama**: Ade Kurniawan
+- **Email**: adekurniawan21032003@gmail.com
+- **LinkedIn**: [linkedin.com/in/adekurniawan2103](https://www.linkedin.com/in/adekurniawan2103)
+- **WhatsApp**: +6281367059816
