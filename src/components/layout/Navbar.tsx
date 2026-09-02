@@ -48,10 +48,7 @@ export const Navbar = () => {
         >
           {/* Logo & Status */}
           <div className="flex items-center gap-3">
-            <Link href="/" className="group flex items-center gap-1 text-xl sm:text-2xl font-black tracking-tighter">
-              <span className="text-[var(--text-primary)] group-hover:text-teal-400 transition-colors">ade</span>
-              <span className="text-teal-400 animate-pulse">.</span>
-            </Link>
+
 
           </div>
 
