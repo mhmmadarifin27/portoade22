@@ -20,10 +20,6 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-[var(--border-subtle)]">
           {/* Brand Col */}
           <div className="md:col-span-6 space-y-4">
-            <Link href="/" className="inline-flex items-center gap-1 text-2xl font-black tracking-tighter">
-              <span className="text-[var(--text-primary)]">ade</span>
-              <span className="text-teal-400">.</span>
-            </Link>
             <p className="text-sm text-[var(--text-secondary)] max-w-md leading-relaxed">
               {t.footer.description}
             </p>
