@@ -53,13 +53,6 @@ export const Navbar = () => {
               <span className="text-teal-400 animate-pulse">.</span>
             </Link>
 
-            {/* Quick Available Badge (Hidden on small mobile) */}
-            <div className="hidden lg:flex items-center gap-2 pl-3 border-l border-[var(--border-subtle)] text-xs font-semibold text-[var(--text-secondary)]">
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
-              <span className="text-emerald-500 dark:text-emerald-400">
-                {language === 'id' ? 'Siap Kerja' : 'Available'}
-              </span>
-            </div>
           </div>
 
           {/* Desktop Navigation Links */}

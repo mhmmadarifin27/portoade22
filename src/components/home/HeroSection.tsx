@@ -17,14 +17,6 @@ export const HeroSection = () => {
       <div className="absolute bottom-1/4 right-10 w-[300px] h-[300px] bg-indigo-500/10 dark:bg-indigo-500/10 rounded-full blur-[100px] pointer-events-none -z-10" />
 
       <div className="max-w-5xl mx-auto w-full text-center space-y-8">
-        {/* Status Badge */}
-        <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-xs font-bold tracking-wide uppercase bg-teal-500/10 border border-teal-500/30 text-teal-600 dark:text-teal-400 shadow-sm backdrop-blur-md">
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-          </span>
-          <span>{t.hero.status}</span>
-        </div>
 
         {/* Main Title & Editorial Typography */}
         <div className="space-y-4">
