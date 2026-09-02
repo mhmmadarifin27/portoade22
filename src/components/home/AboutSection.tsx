@@ -57,41 +57,18 @@ export const AboutSection = () => {
               <div className="absolute bottom-5 left-5 right-5 z-10 flex items-center justify-between">
                 <div>
                   <h3 className="text-lg font-bold text-white leading-tight">Ade Kurniawan</h3>
-                  <p className="text-xs text-teal-300 font-medium">S1 Sistem Informasi (S.Kom)</p>
+                  <p className="text-xs text-teal-300 font-medium">IT Support & Web Developer</p>
                 </div>
-                <span className="px-3 py-1 rounded-full text-xs font-bold bg-white/20 backdrop-blur-md text-white border border-white/20">
-                  IPK {portfolioData.gpa}
-                </span>
               </div>
             </div>
           </div>
 
-          {/* Bio Story & Education Card */}
+          {/* Bio Story & Core Interests */}
           <div className="lg:col-span-7 space-y-6">
             <div className="space-y-4 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed text-justify">
               <p>
                 {portfolioData.about[language]}
               </p>
-            </div>
-
-            {/* Education Highlight Box */}
-            <div className="p-5 rounded-2xl glass-card flex items-start gap-4 border-l-4 border-l-teal-500">
-              <div className="p-3 rounded-xl bg-teal-500/10 text-teal-500 shrink-0">
-                <GraduationCap className="w-6 h-6" />
-              </div>
-              <div className="space-y-1">
-                <h4 className="font-bold text-sm sm:text-base text-[var(--text-primary)]">
-                  {t.about.educationTitle}
-                </h4>
-                <p className="text-xs sm:text-sm text-[var(--text-secondary)]">
-                  {portfolioData.education[language]}
-                </p>
-                <div className="flex flex-wrap items-center gap-2 pt-1 text-xs text-[var(--text-muted)]">
-                  <span className="font-bold text-teal-500">IPK {portfolioData.gpa}</span>
-                  <span>•</span>
-                  <span>{t.about.degreeValue}</span>
-                </div>
-              </div>
             </div>
 
             {/* Core Interests Tags */}

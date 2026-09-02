@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { ArrowRight, Mail, Sparkles, MapPin, Award, Briefcase, Code2, GraduationCap } from 'lucide-react';
+import { ArrowRight, Mail, Sparkles, MapPin, Award, Briefcase, Code2, Users } from 'lucide-react';
 import { LinkedinIcon, GithubIcon, WhatsappIcon } from '@/components/ui/Icons';
 import { portfolioData } from '@/data/portfolioData';
 import { useLanguage } from '@/context/LanguageContext';
@@ -36,13 +36,9 @@ export const HeroSection = () => {
 
         {/* Location & Alma Mater Pill */}
         <div className="flex flex-wrap items-center justify-center gap-3 text-xs font-semibold text-[var(--text-secondary)]">
-          <span className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-[var(--bg-pill)] border border-[var(--border-subtle)]">
+          <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[var(--bg-pill)] border border-[var(--border-subtle)]">
             <MapPin className="w-3.5 h-3.5 text-teal-400" />
             {portfolioData.location[language]}
-          </span>
-          <span className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-[var(--bg-pill)] border border-[var(--border-subtle)]">
-            <GraduationCap className="w-3.5 h-3.5 text-indigo-400" />
-            {portfolioData.education[language]} • IPK {portfolioData.gpa}
           </span>
         </div>
 
@@ -141,16 +137,16 @@ export const HeroSection = () => {
 
           <div className="p-4 sm:p-5 rounded-2xl glass-card">
             <div className="flex items-center gap-2 text-amber-400 mb-2">
-              <GraduationCap className="w-4 h-4" />
+              <Users className="w-4 h-4" />
               <span className="text-xs font-bold uppercase tracking-wider text-[var(--text-muted)]">
-                {t.hero.quickStats.gpa}
+                {t.hero.quickStats.organization}
               </span>
             </div>
             <div className="text-xl sm:text-2xl font-black text-[var(--text-primary)]">
-              {t.hero.quickStats.gpaValue}
+              {t.hero.quickStats.organizationValue}
             </div>
             <p className="text-xs text-[var(--text-muted)] mt-1">
-              Peraih IPK Tertinggi Prodi
+              GenBI, HIMSI, BEM FST, EmpowerU
             </p>
           </div>
 

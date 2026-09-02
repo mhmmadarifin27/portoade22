@@ -161,8 +161,12 @@ export const portfolioData: PortfolioData = {
       },
       stack: ['PHP', 'JavaScript', 'Responsive UI', 'CSS3', 'MySQL'],
       demo: 'http://localhost/batik-modern/',
-      coverImage: '/images/projects/batik.png',
-      slides: ['/images/projects/batik.png', '/images/projects/slides/batik-2.png'],
+      coverImage: '/images/projects/gallery/batik/slide-1.png',
+      slides: [
+        '/images/projects/gallery/batik/slide-1.png',
+        '/images/projects/gallery/batik/slide-2.png',
+        '/images/projects/gallery/batik/slide-3.png',
+      ],
       features: {
         id: [
           'Katalog produk batik dinamis dengan filter motif dan harga',
@@ -201,8 +205,14 @@ export const portfolioData: PortfolioData = {
       },
       stack: ['Laravel', 'MySQL', 'Barcode Integration', 'Bootstrap', 'JavaScript'],
       demo: 'http://localhost/gudang_barang/public',
-      coverImage: '/images/projects/gudang-barang.png',
-      slides: ['/images/projects/gudang-barang.png', '/images/projects/slides/gudang-barang-2.png'],
+      coverImage: '/images/projects/gallery/gudang-barang/slide-1.png',
+      slides: [
+        '/images/projects/gallery/gudang-barang/slide-1.png',
+        '/images/projects/gallery/gudang-barang/slide-2.png',
+        '/images/projects/gallery/gudang-barang/slide-3.png',
+        '/images/projects/gallery/gudang-barang/slide-4.png',
+        '/images/projects/gallery/gudang-barang/slide-5.png',
+      ],
       features: {
         id: [
           'Pemindaian barcode terintegrasi untuk input dan pencarian cepat inventaris',
@@ -241,8 +251,14 @@ export const portfolioData: PortfolioData = {
       },
       stack: ['Laravel', 'Vite', 'Tailwind CSS', 'Alpine.js', 'MySQL'],
       demo: 'http://localhost/mandalagiricoffee/public',
-      coverImage: '/images/projects/mandalagiri-coffee.png',
-      slides: ['/images/projects/mandalagiri-coffee.png', '/images/projects/slides/mandalagiri-coffee-2.png'],
+      coverImage: '/images/projects/gallery/mandalagiri-coffee/slide-1.png',
+      slides: [
+        '/images/projects/gallery/mandalagiri-coffee/slide-1.png',
+        '/images/projects/gallery/mandalagiri-coffee/slide-2.png',
+        '/images/projects/gallery/mandalagiri-coffee/slide-3.png',
+        '/images/projects/gallery/mandalagiri-coffee/slide-4.png',
+        '/images/projects/gallery/mandalagiri-coffee/slide-5.png',
+      ],
       features: {
         id: [
           'Company profile interaktif dengan kisah petani dan proses pengolahan kopi',
@@ -281,8 +297,14 @@ export const portfolioData: PortfolioData = {
       },
       stack: ['Laravel 12', 'MySQL', 'Vite', 'Tailwind CSS', 'Blade'],
       demo: 'http://localhost/inventaris-main/public/login',
-      coverImage: '/images/projects/inventory-system.png',
-      slides: ['/images/projects/inventory-system.png', '/images/projects/slides/inventory-system-2.png'],
+      coverImage: '/images/projects/gallery/inventory-system/slide-1.png',
+      slides: [
+        '/images/projects/gallery/inventory-system/slide-1.png',
+        '/images/projects/gallery/inventory-system/slide-2.png',
+        '/images/projects/gallery/inventory-system/slide-3.png',
+        '/images/projects/gallery/inventory-system/slide-4.png',
+        '/images/projects/gallery/inventory-system/slide-5.png',
+      ],
       features: {
         id: [
           'Pendataan kode registrasi aset fakultas, laboratorium, dan ruang kuliah',
@@ -321,8 +343,14 @@ export const portfolioData: PortfolioData = {
       },
       stack: ['Laravel 12', 'Leaflet.js / Maps', 'MySQL', 'Charts.js', 'Dashboard UI'],
       demo: 'http://localhost/kilang-ru3/public',
-      coverImage: '/images/projects/kilang-ru3.png',
-      slides: ['/images/projects/kilang-ru3.png', '/images/projects/slides/kilang-ru3-2.png'],
+      coverImage: '/images/projects/gallery/kilang-ru3/slide-1.png',
+      slides: [
+        '/images/projects/gallery/kilang-ru3/slide-1.png',
+        '/images/projects/gallery/kilang-ru3/slide-2.png',
+        '/images/projects/gallery/kilang-ru3/slide-3.png',
+        '/images/projects/gallery/kilang-ru3/slide-4.png',
+        '/images/projects/gallery/kilang-ru3/slide-5.png',
+      ],
       features: {
         id: [
           'Peta interaktif titik koordinat area pemantauan lingkungan kilang',
@@ -360,8 +388,14 @@ export const portfolioData: PortfolioData = {
       },
       stack: ['Laravel 8', 'MySQL', 'Laravel Mix', 'Bootstrap', 'JavaScript'],
       demo: 'http://127.0.0.1:8020',
-      coverImage: '/images/projects/academic-information-system.png',
-      slides: ['/images/projects/academic-information-system.png', '/images/projects/slides/academic-information-system-2.png'],
+      coverImage: '/images/projects/gallery/academic-information-system/slide-1.png',
+      slides: [
+        '/images/projects/gallery/academic-information-system/slide-1.png',
+        '/images/projects/gallery/academic-information-system/slide-2.png',
+        '/images/projects/gallery/academic-information-system/slide-3.png',
+        '/images/projects/gallery/academic-information-system/slide-4.png',
+        '/images/projects/gallery/academic-information-system/slide-5.png',
+      ],
       features: {
         id: [
           'Manajemen data induk siswa, guru, dan kelas terpadu',
@@ -399,8 +433,14 @@ export const portfolioData: PortfolioData = {
       },
       stack: ['PHP Native', 'MVC Architecture', 'MySQL', 'CSS3', 'JavaScript'],
       demo: 'http://localhost/sibos/',
-      coverImage: '/images/projects/sibos.png',
-      slides: ['/images/projects/sibos.png', '/images/projects/slides/sibos-2.png'],
+      coverImage: '/images/projects/gallery/sibos/slide-1.png',
+      slides: [
+        '/images/projects/gallery/sibos/slide-1.png',
+        '/images/projects/gallery/sibos/slide-2.png',
+        '/images/projects/gallery/sibos/slide-3.png',
+        '/images/projects/gallery/sibos/slide-4.png',
+        '/images/projects/gallery/sibos/slide-5.png',
+      ],
       features: {
         id: [
           'Implementasi arsitektur Model-View-Controller (MVC) murni berbasis PHP',
@@ -438,8 +478,14 @@ export const portfolioData: PortfolioData = {
       },
       stack: ['Laravel 11', 'SQLite / MySQL', 'Bootstrap 5', 'DataTables'],
       demo: 'http://localhost/toko-bangunan/public',
-      coverImage: '/images/projects/toko-bangunan.png',
-      slides: ['/images/projects/toko-bangunan.png', '/images/projects/slides/toko-bangunan-2.png'],
+      coverImage: '/images/projects/gallery/toko-bangunan/slide-1.png',
+      slides: [
+        '/images/projects/gallery/toko-bangunan/slide-1.png',
+        '/images/projects/gallery/toko-bangunan/slide-2.png',
+        '/images/projects/gallery/toko-bangunan/slide-3.png',
+        '/images/projects/gallery/toko-bangunan/slide-4.png',
+        '/images/projects/gallery/toko-bangunan/slide-5.png',
+      ],
       features: {
         id: [
           'Katalog material lengkap (Semen, Cat, Kayu, Besi, Perkakas) dengan foto',
@@ -491,6 +537,7 @@ export const portfolioData: PortfolioData = {
       photos: [
         '/images/experience/mandalagiri-closing.png',
         '/images/experience/mandalagiri-coordination.jpeg',
+        '/images/experience/mandalagiri-zoom-meeting.png',
       ],
       documents: [
         {

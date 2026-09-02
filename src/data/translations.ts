@@ -26,8 +26,8 @@ export const translations = {
         experienceValue: '2 Perusahaan',
         projects: 'Proyek Selesai',
         projectsValue: '8+ Aplikasi',
-        gpa: 'IPK Kelulusan',
-        gpaValue: '3.78 / 4.00',
+        organization: 'Pengalaman Organisasi',
+        organizationValue: '4+ Lembaga',
         certs: 'Sertifikasi Terverifikasi',
         certsValue: '10+ Lisensi',
       }
@@ -177,8 +177,8 @@ export const translations = {
         experienceValue: '2 Enterprises',
         projects: 'Completed Projects',
         projectsValue: '8+ Web Apps',
-        gpa: 'Graduation GPA',
-        gpaValue: '3.78 / 4.00',
+        organization: 'Leadership & Orgs',
+        organizationValue: '4+ Entities',
         certs: 'Verified Certifications',
         certsValue: '10+ Licenses',
       }

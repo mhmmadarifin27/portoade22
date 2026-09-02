@@ -121,22 +121,12 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onC
 
           {/* Action Buttons */}
           <div className="pt-4 border-t border-slate-800 flex flex-wrap items-center justify-between gap-3">
-            <a
-              href={project.demo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-sm bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-400 hover:to-cyan-500 text-white shadow-lg shadow-teal-500/20 transition-all hover:scale-[1.02]"
-            >
-              <ExternalLink className="w-4 h-4" />
-              {t.projects.openDemo}
-            </a>
-
             <Link
               href={`/projects/${project.slug}`}
               onClick={onClose}
-              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-bold text-sm bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-colors"
+              className="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl font-bold text-sm bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-400 hover:to-cyan-500 text-white shadow-lg shadow-teal-500/20 transition-all hover:scale-[1.02]"
             >
-              {t.projects.viewDetail}
+              <span>{language === 'id' ? 'Buka Dokumentasi & Studi Kasus Lengkap' : 'View Full Case Study & Documentation'}</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

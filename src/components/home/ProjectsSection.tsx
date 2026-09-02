@@ -134,24 +134,14 @@ export const ProjectsSection = () => {
                   <span>{t.projects.viewDetail}</span>
                 </button>
 
-                <div className="flex items-center gap-2">
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 rounded-lg bg-[var(--bg-pill)] hover:bg-[var(--bg-pill-hover)] text-[var(--text-secondary)] hover:text-teal-400 border border-[var(--border-subtle)] transition-colors"
-                    title={t.projects.openDemo}
-                  >
-                    <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
-                  <Link
-                    href={`/projects/${project.slug}`}
-                    className="p-2 rounded-lg bg-[var(--bg-pill)] hover:bg-[var(--bg-pill-hover)] text-[var(--text-secondary)] hover:text-teal-400 border border-[var(--border-subtle)] transition-colors"
-                    title={t.projects.viewDetail}
-                  >
-                    <ArrowRight className="w-3.5 h-3.5" />
-                  </Link>
-                </div>
+                <Link
+                  href={`/projects/${project.slug}`}
+                  className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-semibold bg-[var(--bg-pill)] hover:bg-[var(--bg-pill-hover)] text-[var(--text-primary)] border border-[var(--border-subtle)] transition-all hover:scale-105"
+                  title="Lihat Dokumentasi Lengkap"
+                >
+                  <span>{language === 'id' ? 'Dokumentasi' : 'Documentation'}</span>
+                  <ArrowRight className="w-3.5 h-3.5 text-teal-400" />
+                </Link>
               </div>
             </div>
           ))}

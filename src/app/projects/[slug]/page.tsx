@@ -134,22 +134,59 @@ export default async function ProjectDetailPage({ params }: ProjectDetailProps) 
               </div>
             </div>
 
-            {/* Live Demo Action */}
-            <div className="p-6 rounded-2xl glass-card space-y-3 border border-[var(--border-subtle)] text-center">
-              <h4 className="font-bold text-sm text-[var(--text-primary)]">Demo Langsung</h4>
-              <a
-                href={project.demo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-bold text-xs bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-400 hover:to-cyan-500 text-white shadow-lg shadow-teal-500/20 transition-all hover:scale-[1.02]"
-              >
-                <ExternalLink className="w-4 h-4" />
-                <span>Buka Demo Aplikasi</span>
-              </a>
-              <p className="text-[10px] text-[var(--text-muted)] leading-normal">
-                Catatan: URL demo dikonfigurasi untuk lingkungan lokal/staging.
+            {/* Documentation Overview */}
+            <div className="p-6 rounded-2xl glass-card space-y-3 border border-[var(--border-subtle)]">
+              <h4 className="font-bold text-sm text-[var(--text-primary)] flex items-center gap-2">
+                <Tag className="w-4 h-4 text-teal-400" />
+                Dokumentasi Antarmuka
+              </h4>
+              <p className="text-xs text-[var(--text-secondary)] leading-relaxed">
+                Menyajikan total <strong className="text-teal-400">{project.slides.length} tangkapan layar</strong> modul sistem aktif yang mendokumentasikan alur kerja dan fitur aplikasi.
               </p>
+              <div className="pt-2">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold bg-teal-500/10 text-teal-400 border border-teal-500/20">
+                  <CheckCircle2 className="w-3.5 h-3.5" />
+                  Dokumentasi Terverifikasi
+                </span>
+              </div>
             </div>
+          </div>
+        </div>
+
+        {/* Full Screenshots Documentation Gallery */}
+        <div className="space-y-6 pt-6">
+          <div className="space-y-2">
+            <h3 className="text-xl sm:text-2xl font-black tracking-tight text-[var(--text-primary)]">
+              Galeri Tangkapan Layar & Dokumentasi Modul
+            </h3>
+            <p className="text-xs sm:text-sm text-[var(--text-muted)]">
+              Rincian tampilan antarmuka pengguna, form data, dan dashboard operasional pada sistem {project.name.id}.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-6">
+            {project.slides.map((slideUrl, idx) => (
+              <div
+                key={idx}
+                className="rounded-2xl glass-card overflow-hidden border border-[var(--border-subtle)] space-y-3 p-4 group hover:border-teal-500/40 transition-all"
+              >
+                <div className="flex items-center justify-between text-xs font-bold text-[var(--text-muted)] px-1">
+                  <span className="text-teal-400">Layar #{idx + 1}</span>
+                  <span className="font-mono text-[10px] bg-[var(--bg-pill)] px-2.5 py-1 rounded-full border border-[var(--border-subtle)]">
+                    {project.name.id}
+                  </span>
+                </div>
+                <div className="relative aspect-[16/9] w-full rounded-xl overflow-hidden bg-black/40 border border-white/5">
+                  <Image
+                    src={slideUrl}
+                    alt={`${project.name.id} - Screenshot ${idx + 1}`}
+                    fill
+                    className="object-contain group-hover:scale-[1.01] transition-transform duration-300"
+                    sizes="(max-width: 1024px) 100vw, 850px"
+                  />
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
