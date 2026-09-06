@@ -28,10 +28,7 @@ export const AboutSection = () => {
     <section id="tentang" className="py-20 px-4 sm:px-6 relative">
       <div className="max-w-6xl mx-auto space-y-16">
         {/* Section Header */}
-        <div className="space-y-3">
-          <div className="tag-badge">
-            {t.about.tag}
-          </div>
+        <div className="space-y-2">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-[var(--text-primary)]">
             {t.about.title}
           </h2>

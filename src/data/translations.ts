@@ -34,8 +34,8 @@ export const translations = {
     },
     about: {
       tag: 'TENTANG SAYA',
-      title: 'Berproses lewat teknologi, data, dan kepemimpinan.',
-      subtitle: 'Lulusan S1 Sistem Informasi dengan dedikasi tinggi pada efisiensi operasional dan pengembangan solusi digital.',
+      title: 'Tentang Saya',
+      subtitle: 'Dedikasi pada efisiensi data, analisis sistem, dan ketertiban administrasi.',
       interestsTitle: 'Bidang Minat Utama',
       educationTitle: 'Pendidikan',
       educationDesc: 'S1 Sistem Informasi — UIN Raden Fatah Palembang (2022–2026)',
@@ -185,8 +185,8 @@ export const translations = {
     },
     about: {
       tag: 'ABOUT ME',
-      title: 'Empowered by technology, driven by data & leadership.',
-      subtitle: 'Information Systems graduate dedicated to operational excellence, user-centric software, and digital transformation.',
+      title: 'About Me',
+      subtitle: 'Dedicated to structured data management, system analysis, and administrative efficiency.',
       interestsTitle: 'Core Areas of Interest',
       educationTitle: 'Education',
       educationDesc: 'B.S. in Information Systems — UIN Raden Fatah Palembang (2022–2026)',

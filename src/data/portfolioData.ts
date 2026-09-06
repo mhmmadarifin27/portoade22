@@ -519,19 +519,19 @@ export const portfolioData: PortfolioData = {
         en: 'Industry / Cooperative Internship',
       },
       detail: {
-        id: 'Merancang dan mengembangkan website terintegrasi berupa company profile dan toko online untuk memperkenalkan identitas koperasi serta mendukung pemasaran produk Kopi Mandalagiri ke pasar yang lebih luas.',
-        en: 'Designed and engineered an integrated web platform combining corporate branding and an online store to boost market awareness and product distribution for Kopi Mandalagiri.',
+        id: 'Mengembangkan website terintegrasi yang memuat company profile dan katalog produk untuk mendukung penyajian informasi, administrasi digital, serta pemasaran Kopi Mandalagiri.',
+        en: 'Developed an integrated website featuring a company profile and product catalog to support information presentation, digital administration, and marketing for Kopi Mandalagiri.',
       },
       highlights: {
         id: [
-          'Mengembangkan struktur informasi website, tampilan responsif, katalog produk, dan konten pemasaran digital.',
-          'Berkoordinasi intensif dengan pengurus koperasi untuk menggali kebutuhan sistem, menguji fungsionalitas fitur, dan menyesuaikan alur website dengan operasional KPKM.',
-          'Menata UI/UX dan arsitektur data agar profil lembaga, lini produk kopi, serta program pemberdayaan petani mudah diakses oleh publik.',
+          'Mengumpulkan, mengolah, dan memvalidasi informasi profil koperasi, produk, serta kegiatan sebelum disajikan melalui website yang terstruktur dan responsif.',
+          'Mengembangkan struktur website, katalog produk, tampilan UI/UX, serta memublikasikan 10–15 pembaruan kegiatan agar informasi mudah diakses oleh masyarakat dan calon pelanggan.',
+          'Berkoordinasi dengan pengurus koperasi dalam analisis kebutuhan, pengujian fitur, pengelolaan konten dan dokumentasi digital, serta penyesuaian website dengan kegiatan operasional dan identitas KPKM.',
         ],
         en: [
-          'Engineered information architecture, responsive user interface, digital product catalogs, and marketing landing pages.',
-          'Collaborated closely with cooperative stakeholders to gather requirements, perform user testing, and align digital workflows with daily operations.',
-          'Crafted modern UI/UX to ensure seamless public discovery of farmer community initiatives and specialty coffee collections.',
+          'Collected, processed, and validated cooperative profile information, products, and activities prior to structured and responsive digital presentation.',
+          'Developed website structure, product catalog, UI/UX interfaces, and published 10–15 activity updates for seamless public and prospective customer access.',
+          'Coordinated with cooperative management in requirements analysis, feature testing, digital content & documentation management, and aligning the website with KPKM operations.',
         ],
       },
       photos: [
