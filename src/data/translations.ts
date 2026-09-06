@@ -22,8 +22,8 @@ export const translations = {
       ctaCV: 'Lihat Resume / CV',
       location: 'Palembang, Indonesia',
       quickStats: {
-        experience: 'Pengalaman Magang',
-        experienceValue: '2 Perusahaan',
+        experience: 'Pengalaman Profesional',
+        experienceValue: '5 Pengalaman',
         projects: 'Proyek Selesai',
         projectsValue: '8+ Aplikasi',
         organization: 'Pengalaman Organisasi',
@@ -173,8 +173,8 @@ export const translations = {
       ctaCV: 'View Resume / CV',
       location: 'Palembang, Indonesia',
       quickStats: {
-        experience: 'Internship Experience',
-        experienceValue: '2 Enterprises',
+        experience: 'Professional Experience',
+        experienceValue: '5 Experiences',
         projects: 'Completed Projects',
         projectsValue: '8+ Web Apps',
         organization: 'Leadership & Orgs',

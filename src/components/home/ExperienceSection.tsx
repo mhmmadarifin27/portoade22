@@ -100,7 +100,7 @@ export const ExperienceSection = () => {
                       <div
                         key={pIdx}
                         onClick={() => setLightboxData({ images: exp.photos, initialIndex: pIdx })}
-                        className="relative aspect-[16/10] w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(33.333%-0.75rem)] max-w-sm sm:max-w-none rounded-2xl overflow-hidden cursor-pointer group border border-[var(--border-subtle)] bg-slate-950/70 shadow-md shrink-0"
+                        className="relative aspect-[4/3] w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(33.333%-0.75rem)] max-w-sm sm:max-w-none rounded-2xl overflow-hidden cursor-pointer group border border-[var(--border-subtle)] bg-slate-950/70 shadow-md shrink-0"
                       >
                         <Image
                           src={photo}

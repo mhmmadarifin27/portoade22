@@ -559,6 +559,82 @@ export const portfolioData: PortfolioData = {
       ],
     },
     {
+      id: 'jnt',
+      company: 'PT Global Jet Express (J&T Express)',
+      role: {
+        id: 'Operasional Data Administrator',
+        en: 'Operational Data Administrator',
+      },
+      period: {
+        id: '24 Februari 2026 – 12 April 2026',
+        en: 'February 24, 2026 – April 12, 2026',
+      },
+      type: {
+        id: 'Logistik & Administrasi Data Operasional',
+        en: 'Logistics & Operational Data Administration',
+      },
+      detail: {
+        id: 'Mengelola administrasi dan rekonsiliasi data operasional paket retur harian menggunakan sistem JMS J&T Express, mobile barcode scanner, dan Microsoft Excel untuk memastikan ketepatan pencatatan serta akurasi fisik paket di lapangan.',
+        en: 'Managed daily operational data administration and parcel reconciliation using JMS J&T Express, mobile barcode scanners, and Microsoft Excel to guarantee precise tracking and inventory accuracy.',
+      },
+      highlights: {
+        id: [
+          'Mengelola administrasi 1.000–1.500 paket retur per hari menggunakan JMS J&T Express, mobile barcode scanner, dan Microsoft Excel untuk memastikan ketepatan pencatatan dan status paket.',
+          'Melakukan inventarisasi, pemeriksaan, dan validasi hingga 2.500 paket untuk memastikan kesesuaian data sistem dengan kondisi fisik di lapangan.',
+          'Mengoordinasikan pengelompokan hingga 3.000 paket berdasarkan kurir dan kode distribusi serta mengelola dokumentasi POD Return untuk mendukung kelancaran pengembalian dan distribusi paket.',
+        ],
+        en: [
+          'Managed administrative records for 1,000–1,500 return packages daily utilizing JMS J&T Express, mobile barcode scanners, and Microsoft Excel to guarantee precise tracking status.',
+          'Conducted physical inventory counts, inspections, and validations of up to 2,500 parcels to ensure 100% data fidelity between system logs and warehouse stock.',
+          'Coordinated grouping of up to 3,000 packages by courier and distribution routing codes while maintaining POD Return documentation to ensure seamless return logistics.',
+        ],
+      },
+      photos: [
+        '/images/experience/jnt/jnt-1.jpeg',
+        '/images/experience/jnt/jnt-2.jpeg',
+        '/images/experience/jnt/jnt-3.jpeg',
+      ],
+      documents: [],
+    },
+    {
+      id: 'inventory-capstone',
+      company: 'Fakultas Sains dan Teknologi - UIN Raden Fatah Palembang',
+      role: {
+        id: 'Web Developer — Inventory System Capstone Project',
+        en: 'Web Developer — Inventory System Capstone Project',
+      },
+      period: {
+        id: '1 Oktober 2025 – 18 Desember 2025',
+        en: 'October 1, 2025 – December 18, 2025',
+      },
+      type: {
+        id: 'Proyek Capstone / Rekayasa Sistem Web',
+        en: 'Capstone Project / Web Systems Engineering',
+      },
+      detail: {
+        id: 'Berkolaborasi dalam tim beranggotakan tiga orang untuk mengembangkan sistem informasi inventaris berbasis web menggunakan Laravel dan MySQL, dengan pengelolaan proyek melalui GitHub dan Trello.',
+        en: 'Collaborated in a three-member engineering team to develop a web-based inventory management system utilizing Laravel and MySQL, managing sprint workflows via GitHub and Trello.',
+      },
+      highlights: {
+        id: [
+          'Berkolaborasi dalam tim beranggotakan tiga orang untuk mengembangkan sistem informasi inventaris berbasis web menggunakan Laravel dan MySQL, dengan pengelolaan proyek melalui GitHub dan Trello.',
+          'Mengelola dan mengintegrasikan lebih dari 700 data aset serta mengembangkan fitur dashboard, pengelolaan barang, pencarian inventaris, dokumentasi barang rusak, dan riwayat perpindahan aset.',
+          'Melakukan validasi data, pengujian fitur, dan dokumentasi sistem serta menghasilkan website yang dapat diakses melalui hosting dan didemonstrasikan melalui video proyek.',
+        ],
+        en: [
+          'Collaborated in a 3-person team to build a web-based inventory information system using Laravel & MySQL, coordinated through GitHub and Trello agile boards.',
+          'Managed and normalized 700+ asset data entries while engineering dashboard analytics, item management, catalog search, damaged goods logs, and transfer histories.',
+          'Conducted comprehensive data validation, feature testing, system documentation, and successfully deployed the platform live with full project video demonstrations.',
+        ],
+      },
+      photos: [
+        '/images/experience/inventory/inventory-1.jpeg',
+        '/images/experience/inventory/inventory-2.jpeg',
+        '/images/experience/inventory/inventory-3.jpeg',
+      ],
+      documents: [],
+    },
+    {
       id: 'pertamina',
       company: 'PT Kilang Pertamina Internasional RU III Plaju',
       role: {
@@ -604,6 +680,44 @@ export const portfolioData: PortfolioData = {
           preview: '/images/experience/pertamina-certificate-1.png',
         },
       ],
+    },
+    {
+      id: 'kai',
+      company: 'PT Kereta Api Indonesia (Persero) Divre III Palembang',
+      role: {
+        id: 'IT Infrastructure & Support — Academic Field Project',
+        en: 'IT Infrastructure & Support — Academic Field Project',
+      },
+      period: {
+        id: '20 Februari 2025 – 20 Mei 2025',
+        en: 'February 20, 2025 – May 20, 2025',
+      },
+      type: {
+        id: 'Proyek Riset & Lapangan BUMN Transportasi',
+        en: 'Transportation SOE / Field Research Project',
+      },
+      detail: {
+        id: 'Melakukan observasi infrastruktur TI, pemeliharaan perangkat, troubleshooting jaringan, dan penelitian analisis strategis sistem pada PT Kereta Api Indonesia (Persero) Divre III Palembang.',
+        en: 'Conducted IT infrastructure observations, hardware maintenance, network troubleshooting, and strategic IT analysis research at PT Kereta Api Indonesia (Persero) Divre III Palembang.',
+      },
+      highlights: {
+        id: [
+          'Melakukan observasi infrastruktur TI serta membantu pengecekan komputer, printer, aplikasi, dan konektivitas jaringan untuk memahami kebutuhan teknologi dalam mendukung operasional perusahaan.',
+          'Mendukung instalasi perangkat lunak, troubleshooting dasar, pemeliharaan 10–20 perangkat, dan dokumentasi kendala teknis dengan berkoordinasi bersama pengguna serta tim terkait.',
+          'Menganalisis kondisi dan kebutuhan infrastruktur TI menggunakan SWOT dan IT Balanced Scorecard serta menyusun rekomendasi pengembangan hasil penelitian dipublikasikan dalam Journal of Artificial Intelligence and Digital Business (RIGGS), Volume 4 Nomor 2 Tahun 2025.',
+        ],
+        en: [
+          'Performed IT infrastructure observations and supported routine checks of workstations, printers, enterprise software, and network connectivity for operational continuity.',
+          'Assisted software installations, foundational hardware troubleshooting, maintenance across 10–20 user workstations, and ticket documentation collaborating with end-users.',
+          'Analyzed IT infrastructure requirements using SWOT and IT Balanced Scorecard frameworks, with strategic recommendations published in the Journal of Artificial Intelligence and Digital Business (RIGGS), Vol. 4 No. 2, 2025.',
+        ],
+      },
+      photos: [
+        '/images/experience/kai/kai-1.jpeg',
+        '/images/experience/kai/kai-2.jpeg',
+        '/images/experience/kai/kai-3.jpeg',
+      ],
+      documents: [],
     },
   ],
   organizations: [
