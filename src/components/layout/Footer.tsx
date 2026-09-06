@@ -2,17 +2,13 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Mail, ArrowUp } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import { LinkedinIcon, GithubIcon, WhatsappIcon } from '@/components/ui/Icons';
 import { portfolioData } from '@/data/portfolioData';
 import { useLanguage } from '@/context/LanguageContext';
 
 export const Footer = () => {
   const { t } = useLanguage();
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
 
   return (
     <footer className="border-t border-[var(--border-subtle)] bg-[var(--bg-secondary)]/40 py-12 transition-colors">
@@ -89,19 +85,9 @@ export const Footer = () => {
             </Link>
           </nav>
 
-          {/* Copyright & Back to Top */}
-          <div className="flex items-center gap-5">
-            <span>
-              © {new Date().getFullYear()} {portfolioData.name}. {t.footer.rights}
-            </span>
-            <button
-              onClick={scrollToTop}
-              className="inline-flex items-center gap-1 font-semibold text-[var(--text-secondary)] hover:text-teal-400 transition-colors"
-              aria-label={t.footer.backToTop}
-            >
-              <span>{t.footer.backToTop}</span>
-              <ArrowUp className="w-3.5 h-3.5" />
-            </button>
+          {/* Copyright */}
+          <div>
+            © {new Date().getFullYear()} {portfolioData.name}. {t.footer.rights}
           </div>
         </div>
       </div>
