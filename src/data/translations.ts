@@ -15,7 +15,7 @@ export const translations = {
     hero: {
       status: 'Terbuka untuk Peluang Kerja & Kolaborasi',
       greeting: 'Halo, saya',
-      roles: 'IT Support • Web Development • Data Administration • Human Resources',
+      roles: 'Data Administration • System Analysis • Database Management • IT Support • Web Development',
       tagline: 'Membangun solusi digital yang andal, efisien, dan berdampak nyata.',
       ctaProjects: 'Jelajahi Portofolio',
       ctaContact: 'Hubungi Saya',
@@ -137,7 +137,7 @@ export const translations = {
       }
     },
     footer: {
-      description: 'Portofolio resmi Ade Kurniawan. Menggabungkan kemampuan IT Support, Web Development, Data Administration, dan Human Resources.',
+      description: 'Portofolio resmi Ade Kurniawan. Menggabungkan kompetensi Data Administration, System Analysis, Database Management, IT Support, dan Web Development.',
       quickLinks: 'Navigasi Cepat',
       rights: 'Hak Cipta Dilindungi.',
       builtWith: 'Dibangun dengan Next.js & Tailwind CSS. Di-hosting di Vercel.',
@@ -166,7 +166,7 @@ export const translations = {
     hero: {
       status: 'Open for Opportunities & Collaborations',
       greeting: 'Hello, I am',
-      roles: 'IT Support • Web Development • Data Administration • Human Resources',
+      roles: 'Data Administration • System Analysis • Database Management • IT Support • Web Development',
       tagline: 'Crafting reliable, scalable digital solutions with tangible real-world impact.',
       ctaProjects: 'Explore Work',
       ctaContact: 'Get in Touch',
@@ -288,7 +288,7 @@ export const translations = {
       }
     },
     footer: {
-      description: 'Official portfolio of Ade Kurniawan. Integrating IT Support, Web Development, Data Administration, and Human Resources.',
+      description: 'Official portfolio of Ade Kurniawan. Integrating competencies in Data Administration, System Analysis, Database Management, IT Support, and Web Development.',
       quickLinks: 'Quick Navigation',
       rights: 'All Rights Reserved.',
       builtWith: 'Built with Next.js & Tailwind CSS. Hosted on Vercel.',

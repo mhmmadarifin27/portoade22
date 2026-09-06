@@ -3,8 +3,8 @@ import { PortfolioData } from './types';
 export const portfolioData: PortfolioData = {
   name: 'Ade Kurniawan',
   role: {
-    id: 'IT Support • Web Development • Data Administration • Human Resources',
-    en: 'IT Support • Web Development • Data Administration • Human Resources',
+    id: 'Data Administration • System Analysis • Database Management • IT Support • Web Development',
+    en: 'Data Administration • System Analysis • Database Management • IT Support • Web Development',
   },
   email: 'adekurniawan21032003@gmail.com',
   linkedin: 'https://www.linkedin.com/in/adekurniawan2103',
@@ -34,12 +34,23 @@ export const portfolioData: PortfolioData = {
   pillars: [
     {
       title: {
-        id: 'IT Support & Systems',
-        en: 'IT Support & Systems',
+        id: 'Data Administration & Analysis',
+        en: 'Data Administration & Analysis',
       },
       desc: {
-        id: 'Troubleshooting hardware, software, konfigurasi jaringan dasar, sistem operasi Windows, dan manajemen pengguna.',
-        en: 'Hardware & software troubleshooting, basic network configurations, Windows OS maintenance, and end-user technical support.',
+        id: 'Pengolahan dan validasi data, formula lanjutan Excel & Spreadsheets, penyusunan laporan terstruktur, administrasi dokumen, dan database MySQL.',
+        en: 'Data processing and validation, advanced spreadsheet modeling, automated reporting, documentation governance, and MySQL querying.',
+      },
+      iconName: 'Database',
+    },
+    {
+      title: {
+        id: 'System Analysis & IT Support',
+        en: 'System Analysis & IT Support',
+      },
+      desc: {
+        id: 'Analisis kebutuhan sistem, pemodelan alur kerja, troubleshooting hardware & software, konfigurasi jaringan dasar, dan manajemen sistem operasi.',
+        en: 'System requirements analysis, workflow modeling, hardware/software troubleshooting, basic network setups, and operating system management.',
       },
       iconName: 'Server',
     },
@@ -56,17 +67,6 @@ export const portfolioData: PortfolioData = {
     },
     {
       title: {
-        id: 'Data Administration',
-        en: 'Data Administration',
-      },
-      desc: {
-        id: 'Pengolahan dan visualisasi data, formula lanjutan Excel & Spreadsheets, administrasi dokumen, dan database MySQL.',
-        en: 'Data processing, advanced spreadsheet modeling, automated reporting, documentation governance, and MySQL querying.',
-      },
-      iconName: 'Database',
-    },
-    {
-      title: {
         id: 'Human Resources & Leadership',
         en: 'Human Resources & Leadership',
       },
@@ -80,37 +80,6 @@ export const portfolioData: PortfolioData = {
   skills: [
     {
       name: {
-        id: 'Web Development',
-        en: 'Web Development',
-      },
-      skills: [
-        { name: 'Laravel', iconSrc: 'https://cdn.simpleicons.org/laravel/FF2D20', color: '#FF2D20' },
-        { name: 'Next.js', iconSrc: 'https://cdn.simpleicons.org/nextdotjs/000000', color: '#000000' },
-        { name: 'JavaScript', iconSrc: 'https://cdn.simpleicons.org/javascript/F7DF1E', color: '#F7DF1E' },
-        { name: 'TypeScript', iconSrc: 'https://cdn.simpleicons.org/typescript/3178C6', color: '#3178C6' },
-        { name: 'PHP', iconSrc: 'https://cdn.simpleicons.org/php/777BB4', color: '#777BB4' },
-        { name: 'MySQL', iconSrc: 'https://cdn.simpleicons.org/mysql/4479A1', color: '#4479A1' },
-        { name: 'HTML & CSS', iconSrc: 'https://cdn.simpleicons.org/html5/E34F26', color: '#E34F26' },
-        { name: 'Tailwind CSS', iconSrc: 'https://cdn.simpleicons.org/tailwindcss/06B6D4', color: '#06B6D4' },
-        { name: 'Bootstrap', iconSrc: 'https://cdn.simpleicons.org/bootstrap/7952B3', color: '#7952B3' },
-      ],
-    },
-    {
-      name: {
-        id: 'IT Support & Operasional',
-        en: 'IT Support & Operations',
-      },
-      skills: [
-        { name: 'Windows OS', iconSrc: '/images/skills/windows.svg', color: '#0078D6' },
-        { name: 'Hardware & Network', iconSrc: 'https://cdn.simpleicons.org/cisco/1BA0D7', color: '#1BA0D7' },
-        { name: 'VS Code', iconSrc: '/images/skills/vscode.svg', color: '#007ACC' },
-        { name: 'Laragon', iconSrc: '/images/skills/laragon.png', color: '#0E83CD' },
-        { name: 'phpMyAdmin', iconSrc: '/images/skills/phpmyadmin.png', color: '#6C78AF' },
-        { name: 'Git & GitHub', iconSrc: 'https://cdn.simpleicons.org/github/181717', color: '#181717' },
-      ],
-    },
-    {
-      name: {
         id: 'Data & Produktivitas Kantor',
         en: 'Data & Office Productivity',
       },
@@ -122,6 +91,37 @@ export const portfolioData: PortfolioData = {
         { name: 'Google Workspace', iconSrc: 'https://cdn.simpleicons.org/google/4285F4', color: '#4285F4' },
         { name: 'Google Sheets', iconSrc: 'https://cdn.simpleicons.org/googlesheets/34A853', color: '#34A853' },
         { name: 'Google Forms & Drive', iconSrc: 'https://cdn.simpleicons.org/googledrive/4285F4', color: '#4285F4' },
+      ],
+    },
+    {
+      name: {
+        id: 'Database & Operasional Sistem',
+        en: 'Database & System Operations',
+      },
+      skills: [
+        { name: 'MySQL', iconSrc: 'https://cdn.simpleicons.org/mysql/4479A1', color: '#4479A1' },
+        { name: 'phpMyAdmin', iconSrc: '/images/skills/phpmyadmin.png', color: '#6C78AF' },
+        { name: 'Windows OS', iconSrc: '/images/skills/windows.svg', color: '#0078D6' },
+        { name: 'Hardware & Network', iconSrc: 'https://cdn.simpleicons.org/cisco/1BA0D7', color: '#1BA0D7' },
+        { name: 'VS Code', iconSrc: '/images/skills/vscode.svg', color: '#007ACC' },
+        { name: 'Laragon', iconSrc: '/images/skills/laragon.png', color: '#0E83CD' },
+        { name: 'Git & GitHub', iconSrc: 'https://cdn.simpleicons.org/github/181717', color: '#181717' },
+      ],
+    },
+    {
+      name: {
+        id: 'Web Development',
+        en: 'Web Development',
+      },
+      skills: [
+        { name: 'Laravel', iconSrc: 'https://cdn.simpleicons.org/laravel/FF2D20', color: '#FF2D20' },
+        { name: 'Next.js', iconSrc: 'https://cdn.simpleicons.org/nextdotjs/000000', color: '#000000' },
+        { name: 'JavaScript', iconSrc: 'https://cdn.simpleicons.org/javascript/F7DF1E', color: '#F7DF1E' },
+        { name: 'TypeScript', iconSrc: 'https://cdn.simpleicons.org/typescript/3178C6', color: '#3178C6' },
+        { name: 'PHP', iconSrc: 'https://cdn.simpleicons.org/php/777BB4', color: '#777BB4' },
+        { name: 'HTML & CSS', iconSrc: 'https://cdn.simpleicons.org/html5/E34F26', color: '#E34F26' },
+        { name: 'Tailwind CSS', iconSrc: 'https://cdn.simpleicons.org/tailwindcss/06B6D4', color: '#06B6D4' },
+        { name: 'Bootstrap', iconSrc: 'https://cdn.simpleicons.org/bootstrap/7952B3', color: '#7952B3' },
       ],
     },
     {

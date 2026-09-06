@@ -53,12 +53,6 @@ export const AboutSection = () => {
                 sizes="(max-width: 768px) 100vw, 500px"
                 priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
-              <div className="absolute bottom-5 left-5 right-5 z-10 flex items-center justify-between">
-                <div>
-                  <h3 className="text-lg font-bold text-white leading-tight">Ade Kurniawan</h3>
-                </div>
-              </div>
             </div>
           </div>
 

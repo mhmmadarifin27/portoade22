@@ -7,16 +7,18 @@ import { Footer } from '@/components/layout/Footer';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://adekurniawan.vercel.app'),
-  title: 'Ade Kurniawan | Portofolio IT Support & Web Development',
+  title: 'Ade Kurniawan | Portofolio Data Administration & System Analysis',
   description:
-    'Portofolio resmi Ade Kurniawan, S.Kom. Profesional di bidang IT Support, Full-Stack Web Development, Data Administration, dan Human Resources.',
+    'Portofolio resmi Ade Kurniawan, S.Kom. Profesional di bidang Data Administration, System Analysis, Database Management, IT Support, dan Web Development.',
   keywords: [
     'Ade Kurniawan',
     'Portofolio Ade Kurniawan',
+    'Data Administration',
+    'System Analysis',
+    'Database Management',
     'IT Support Palembang',
     'Web Developer Laravel',
     'Next.js Portfolio',
-    'Data Administration',
     'Human Resources',
     'Pertamina Internasional RU III',
   ],
@@ -26,9 +28,9 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'id_ID',
     url: 'https://adekurniawan.vercel.app',
-    title: 'Ade Kurniawan | Portofolio IT Support & Web Development',
+    title: 'Ade Kurniawan | Portofolio Data Administration & System Analysis',
     description:
-      'Portofolio profesional Ade Kurniawan — Berpengalaman dalam pengembangan web, dukungan IT, dan administrasi data.',
+      'Portofolio profesional Ade Kurniawan — Berpengalaman dalam administrasi & validasi data, analisis sistem, manajemen database, dukungan IT, dan pengembangan web.',
     siteName: 'Ade Kurniawan Portfolio',
     images: [
       {

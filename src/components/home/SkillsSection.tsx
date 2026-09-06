@@ -10,13 +10,13 @@ export const SkillsSection = () => {
 
   // Combine and partition skills into two balanced continuous ribbons
   const row1 = [
-    ...portfolioData.skills[0].skills, // Web Dev
-    ...portfolioData.skills[1].skills, // IT Support & Dev Tools
+    ...portfolioData.skills[0].skills, // Data & Office Productivity
+    ...portfolioData.skills[1].skills, // Database & System Operations
   ];
 
   const row2 = [
-    ...portfolioData.skills[2].skills, // Data & Office
-    ...portfolioData.skills[3].skills, // Design & Leadership Tools
+    ...portfolioData.skills[2].skills, // Web Development
+    ...portfolioData.skills[3].skills, // Design & Supporting Tools
   ];
 
   // Duplicate arrays for seamless infinite loop

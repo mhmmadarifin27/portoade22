@@ -15,9 +15,9 @@ export default function CertificatesPage() {
 
   const categories = [
     'all',
+    'Data Administration',
     'IT Support',
     'Human Resources',
-    'Data Administration',
     'Digital Marketing',
     'Leadership & Project',
     'Language',
