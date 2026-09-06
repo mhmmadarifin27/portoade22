@@ -20,16 +20,16 @@ export const portfolioData: PortfolioData = {
   },
   gpa: '3.78 / 4.00',
   summary: {
-    id: 'Lulusan S1 Sistem Informasi dengan pengalaman dalam pengembangan website, dukungan IT, pengelolaan data, dan administrasi melalui kegiatan magang serta proyek akademik.',
-    en: 'Information Systems graduate with proven hands-on experience in web development, IT support, data administration, and management through enterprise internships and academic projects.',
+    id: 'Saya lulusan S1 Sistem Informasi dengan pengalaman pengolahan dan validasi data, penyusunan laporan, serta pengembangan sistem informasi melalui magang dan proyek akademik.',
+    en: 'Information Systems graduate experienced in data processing, data validation, report generation, and systems development through internships and academic projects.',
   },
   about: {
-    id: 'Lulusan S1 Sistem Informasi dengan pengalaman dalam pengembangan website, dukungan IT, pengelolaan data, dan administrasi melalui kegiatan magang serta proyek akademik. Berpengalaman mengembangkan website company profile, toko online, dashboard monitoring, dan sistem inventaris berbasis web. Terampil menggunakan Microsoft Excel, Google Workspace, Laravel, MySQL, serta memiliki Google IT Support Professional Certificate. Memiliki kemampuan komunikasi, koordinasi tim, kolaborasi, dan problem solving serta berminat mengembangkan karier di bidang IT Support, Web Development, Data Administration, dan Human Resources.',
-    en: 'Information Systems graduate equipped with versatile expertise across web development, IT support, database administration, and team leadership. Proven track record developing integrated company profile websites, e-commerce storefronts, coordinate-based HSSE monitoring dashboards, and warehouse barcode systems. Proficient in Microsoft Excel, Google Workspace, Laravel, MySQL, and credentialed with the Google IT Support Professional Certificate. A proactive problem-solver and collaborative communicator keen on contributing in IT Support, Full-Stack Web Development, Data Administration, and Human Resources.',
+    id: 'Saya lulusan S1 Sistem Informasi dengan pengalaman pengolahan dan validasi data, penyusunan laporan, serta pengembangan sistem informasi melalui magang dan proyek akademik. Terampil menggunakan Microsoft Excel, Word, PowerPoint, dan Google Workspace untuk mengelola data, dokumen, serta menyajikan informasi. Pengalaman organisasi turut membentuk kemampuan saya dalam administrasi, komunikasi, dan koordinasi kegiatan. Didukung pelatihan Microsoft Office Excel, Word & PowerPoint Specialist serta Google IT Support Professional Certificate, saya tertarik berkontribusi dalam pengelolaan data dan pelayanan administrasi yang akurat, tertib, dan terstruktur.',
+    en: 'I am an Information Systems graduate experienced in data processing, data validation, report preparation, and information systems development through internships and academic projects. Skilled in utilizing Microsoft Excel, Word, PowerPoint, and Google Workspace to manage data, handle documentation, and present structured information. Organizational leadership experience has further strengthened my competencies in office administration, communication, and event coordination. Backed by Microsoft Office Specialist (Excel, Word & PowerPoint) training and the Google IT Support Professional Certificate, I am eager to contribute to accurate, orderly, and structured data management and administrative services.',
   },
   interests: {
-    id: ['IT Support', 'Web Development', 'Data Administration', 'Human Resources', 'Database Management', 'System Analysis'],
-    en: ['IT Support', 'Web Development', 'Data Administration', 'Human Resources', 'Database Management', 'System Analysis'],
+    id: ['Data Administration', 'System Analysis', 'Database Management', 'IT Support', 'Web Development', 'Human Resources'],
+    en: ['Data Administration', 'System Analysis', 'Database Management', 'IT Support', 'Web Development', 'Human Resources'],
   },
   pillars: [
     {

@@ -57,7 +57,6 @@ export const AboutSection = () => {
               <div className="absolute bottom-5 left-5 right-5 z-10 flex items-center justify-between">
                 <div>
                   <h3 className="text-lg font-bold text-white leading-tight">Ade Kurniawan</h3>
-                  <p className="text-xs text-teal-300 font-medium">IT Support & Web Developer</p>
                 </div>
               </div>
             </div>
