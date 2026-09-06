@@ -137,10 +137,10 @@ export const translations = {
       }
     },
     footer: {
-      description: 'Portofolio resmi Ade Kurniawan. Menggabungkan kompetensi Data Administration, System Analysis, Database Management, IT Support, dan Web Development.',
-      quickLinks: 'Navigasi Cepat',
+      description: 'Portofolio resmi Ade Kurniawan.',
+      quickLinks: 'Navigasi',
       rights: 'Hak Cipta Dilindungi.',
-      builtWith: 'Dibangun dengan Next.js & Tailwind CSS. Di-hosting di Vercel.',
+      builtWith: '',
       backToTop: 'Kembali ke Atas',
     },
     modal: {
@@ -288,10 +288,10 @@ export const translations = {
       }
     },
     footer: {
-      description: 'Official portfolio of Ade Kurniawan. Integrating competencies in Data Administration, System Analysis, Database Management, IT Support, and Web Development.',
-      quickLinks: 'Quick Navigation',
+      description: 'Official portfolio of Ade Kurniawan.',
+      quickLinks: 'Navigation',
       rights: 'All Rights Reserved.',
-      builtWith: 'Built with Next.js & Tailwind CSS. Hosted on Vercel.',
+      builtWith: '',
       backToTop: 'Back to Top',
     },
     modal: {
