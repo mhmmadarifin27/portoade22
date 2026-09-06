@@ -109,7 +109,7 @@ export interface Certificate {
   id: string;
   title: string;
   issuer: string;
-  type: 'IT Support' | 'Human Resources' | 'Data Administration' | 'Digital Marketing' | 'Leadership & Project' | 'Language' | 'Research & Innovation';
+  type: 'Surat Rekomendasi' | 'Data Administration' | 'Human Resources' | 'IT Support' | 'Digital Marketing' | 'Leadership & Project' | 'Language' | 'Research & Innovation';
   modules: {
     id: string;
     en: string;

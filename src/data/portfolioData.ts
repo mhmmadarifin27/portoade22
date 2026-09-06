@@ -913,26 +913,26 @@ export const portfolioData: PortfolioData = {
   ],
   certificates: [
     {
-      id: 'google-it-support',
-      title: 'Google IT Support Professional Certificate',
-      issuer: 'Google melalui Coursera',
-      type: 'IT Support',
+      id: 'rekomendasi-office',
+      title: 'Surat Rekomendasi Keahlian Microsoft Excel, Word & PowerPoint',
+      issuer: 'KarirNex — PT Ebiz Karisma Internasional (Kemenkumham RI)',
+      type: 'Surat Rekomendasi',
       modules: {
-        id: 'Troubleshooting perangkat keras & lunak, protokol jaringan komputer, sistem operasi Windows & Linux, administrasi sistem, keamanan informasi dasar, dan layanan dukungan pelanggan IT.',
-        en: 'Hardware & software troubleshooting, computer networking protocols (TCP/IP, DNS), Windows & Linux OS administration, security essentials, and IT customer support workflows.',
+        id: 'Surat rekomendasi resmi (No. 0550/B/SRK/MICROSOFT.10/EKI/IX/2026). Penguasaan formula & fungsi Excel lanjutan (VLOOKUP, HLOOKUP, Pivot Table, Macro VBA, Data Validation), penyusunan laporan Word & CV ATS, serta presentasi penjualan PowerPoint. Direkomendasikan untuk posisi Reporting/Operations Analyst (Excel), Staf Administrasi Data, dan Finance/HR Support.',
+        en: 'Official recommendation letter (No. 0550/B/SRK/MICROSOFT.10/EKI/IX/2026). Advanced Excel formulas (VLOOKUP, HLOOKUP, Pivot Tables, Macro VBA, Data Validation), formal Word reporting, and sales presentations in PowerPoint. Endorsed for Reporting/Operations Analyst, Data Administration, and Finance/HR Support roles.',
       },
-      file: '/documents/certificates/google-it-support.pdf',
+      file: '/documents/certificates/surat-rekomendasi-microsoft-office-karirnex.pdf',
     },
     {
-      id: 'hrci-hr',
-      title: 'HRCI Professional in Human Resources',
-      issuer: 'HRCI (Human Resource Certification Institute) via Coursera',
-      type: 'Human Resources',
+      id: 'rekomendasi-excel-expert',
+      title: 'Surat Rekomendasi Keahlian Microsoft Excel (Predikat Expert)',
+      issuer: 'KarirNex — PT Ebiz Karisma Internasional (Kemenkumham RI)',
+      type: 'Surat Rekomendasi',
       modules: {
-        id: 'Talent acquisition, workforce planning, employee engagement, kompensasi & tunjangan, HR analytics & metrics, kepatuhan hukum ketenagakerjaan, dan manajemen hubungan industrial.',
-        en: 'Talent acquisition, strategic workforce planning, employee engagement, compensation & benefits, HR metrics, labor law compliance, and employee relations management.',
+        id: 'Surat rekomendasi resmi predikat Expert (No. 0743/B/SRK/EXCEL.8/EKI/VI/2026). Pengolahan data terstruktur, formula logika & terapan (AVERAGE, MAX, SUM, IF), tata letak grafik informatif, Pivot Table kalkulasi, Macro VBA, dan penyusunan dashboard penjualan e-commerce. Direkomendasikan untuk Staf Administrasi Data dan Operations Analyst.',
+        en: 'Official recommendation letter with Expert qualification (No. 0743/B/SRK/EXCEL.8/EKI/VI/2026). Structured dataset management, advanced logical formulas, informative chart design, dynamic Pivot Tables, Macro VBA, and e-commerce analytics dashboards. Endorsed for Data Administration and Operations Analyst roles.',
       },
-      file: '/documents/certificates/hrci-professional-human-resources.pdf',
+      file: '/documents/certificates/surat-rekomendasi-microsoft-excel-karirnex.pdf',
     },
     {
       id: 'office-bootcamp',
@@ -957,6 +957,28 @@ export const portfolioData: PortfolioData = {
       file: '/documents/certificates/microsoft-excel-karirnex.pdf',
     },
     {
+      id: 'rekomendasi-digital-marketing',
+      title: 'Surat Rekomendasi Kerja Keahlian Digital Marketing (Predikat Expert)',
+      issuer: 'KarirNex — PT Ebiz Karisma Internasional (Kemenkumham RI)',
+      type: 'Surat Rekomendasi',
+      modules: {
+        id: 'Surat rekomendasi kerja resmi predikat Expert (Bootcamp Batch 4). Penguasaan fundamental digital marketing, copywriting persuasif, manajemen media sosial, manajemen KOL, Search Engine Optimization (SEO), landing page, dan periklanan Meta Ads. Direkomendasikan untuk posisi Digital Marketer, Social Media Specialist, dan Performance Marketer.',
+        en: 'Official work recommendation letter with Expert qualification (Bootcamp Batch 4). Mastery in digital marketing fundamentals, persuasive copywriting, social media governance, KOL relations, SEO optimization, landing pages, and Meta Ads campaigns. Endorsed for Digital Marketer and Performance Marketing roles.',
+      },
+      file: '/documents/certificates/surat-rekomendasi-digital-marketing-karirnex.pdf',
+    },
+    {
+      id: 'hrci-hr',
+      title: 'HRCI Professional in Human Resources',
+      issuer: 'HRCI (Human Resource Certification Institute) via Coursera',
+      type: 'Human Resources',
+      modules: {
+        id: 'Talent acquisition, workforce planning, employee engagement, kompensasi & tunjangan, HR analytics & metrics, kepatuhan hukum ketenagakerjaan, dan manajemen hubungan industrial.',
+        en: 'Talent acquisition, strategic workforce planning, employee engagement, compensation & benefits, HR metrics, labor law compliance, and employee relations management.',
+      },
+      file: '/documents/certificates/hrci-professional-human-resources.pdf',
+    },
+    {
       id: 'hr-bootcamp',
       title: 'Bootcamp Human Resources Management',
       issuer: 'Karir Nex / PT Ebiz Karisma Internasional',
@@ -966,6 +988,17 @@ export const portfolioData: PortfolioData = {
         en: 'End-to-end recruitment lifecycle, competency-based behavioral interviewing (STAR method), job analysis formulation, and HR headcount planning.',
       },
       file: '/documents/certificates/bootcamp-human-resources.pdf',
+    },
+    {
+      id: 'google-it-support',
+      title: 'Google IT Support Professional Certificate',
+      issuer: 'Google melalui Coursera',
+      type: 'IT Support',
+      modules: {
+        id: 'Troubleshooting perangkat keras & lunak, protokol jaringan komputer, sistem operasi Windows & Linux, administrasi sistem, keamanan informasi dasar, dan layanan dukungan pelanggan IT.',
+        en: 'Hardware & software troubleshooting, computer networking protocols (TCP/IP, DNS), Windows & Linux OS administration, security essentials, and IT customer support workflows.',
+      },
+      file: '/documents/certificates/google-it-support.pdf',
     },
     {
       id: 'digital-marketing-ai',

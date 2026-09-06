@@ -28,8 +28,8 @@ export const translations = {
         projectsValue: '8+ Aplikasi',
         organization: 'Pengalaman Organisasi',
         organizationValue: '4+ Lembaga',
-        certs: 'Sertifikasi Terverifikasi',
-        certsValue: '10+ Lisensi',
+        certs: 'Sertifikasi & Rekomendasi',
+        certsValue: '13+ Berkas',
       }
     },
     about: {
@@ -179,8 +179,8 @@ export const translations = {
         projectsValue: '8+ Web Apps',
         organization: 'Leadership & Orgs',
         organizationValue: '4+ Entities',
-        certs: 'Verified Certifications',
-        certsValue: '10+ Licenses',
+        certs: 'Certs & Recommendations',
+        certsValue: '13+ Credentials',
       }
     },
     about: {

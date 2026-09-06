@@ -16,8 +16,9 @@ export const CertificatesSection = () => {
   const categories = [
     'all',
     'Data Administration',
-    'IT Support',
+    'Surat Rekomendasi',
     'Human Resources',
+    'IT Support',
     'Digital Marketing',
     'Leadership & Project',
   ];
